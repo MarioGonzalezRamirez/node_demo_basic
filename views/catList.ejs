@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  .color {
+    background-color:yellow;
+    color: black;
+  }
+  </style>
+
+
+
+<body>
+
+<a href="/addCat">Add a Cat</a>
+<br>
+Your cats:
+
+<table>
+
+<% for(var i = 0; i<cats.length;i++) { %>
+  <tr>
+    <td class="color"> <%= cats[i].name %></td>
+    <td class="color"> <%= cats[i].breed %></td>
+    <td class="color"> <%= cats[i].age %></td>
+    <td class="color"> <img src="<%= cats[i].image %>" height="100" width="100"></td>
+    
+  </tr>
+<% } %>
+
+</table>
+
+</body>
+
+
+</html>
