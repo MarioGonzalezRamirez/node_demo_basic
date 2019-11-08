@@ -3,7 +3,7 @@ var bodyParser = require('body-parser')
 var mongoose = require('mongoose');
 var app = express()
 
-mongoose.connect("mongodb+srv://malbinson:malbinson1@cluster0-cvp0r.mongodb.net/test?retryWrites=true&w=majority")
+mongoose.connect()
 
 //set up vars
 app.set('view engine','ejs');
